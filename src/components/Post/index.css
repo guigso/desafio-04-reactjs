@@ -1,0 +1,60 @@
+.post {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 1px 1px 4px grey;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 32px;
+}
+
+.post-header {
+  display: flex;
+}
+.post-author {
+  margin: 3px 0 0 10px;
+}
+
+.post-author p {
+  margin: 0;
+}
+
+.author-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #3e3e3e;
+}
+
+.post-date {
+  color: #9a9a9a;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.post-comment:hover {
+  overflow: visible;
+  max-height: unset;
+}
+
+.post-comment {
+  display: flex;
+  max-height: 105px;
+  overflow: hidden;
+}
+.comment {
+  background-color: #eeeeee;
+  margin-left: 25px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+
+.post-content p {
+  margin: 0;
+}

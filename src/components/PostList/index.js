@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './index.css';
+import './styles.css';
 
 import Post from '../Post';
 
@@ -20,7 +20,42 @@ class PostList extends Component {
             id: 1,
             author: {
               name: 'Diego Fernandes',
-              avatar: 'https://api.adorable.io/avatars/150/001.png'
+              avatar: 'https://api.adorable.io/avatars/150/Diego.png'
+            },
+            content: 'Conteúdo do comentário'
+          },
+          {
+            id: 2,
+            author: {
+              name: 'Matheus Henrique',
+              avatar: 'https://api.adorable.io/avatars/150/Matheus.png'
+            },
+            content: 'Conteúdo do comentário'
+          }
+        ]
+      },
+      {
+        id: 2,
+        author: {
+          name: 'Julio Alcantara',
+          avatar: 'https://api.adorable.io/avatars/150/Julio.png'
+        },
+        date: '04 Jun 2019',
+        content: 'Pessoal, alguém sabe se a Rocketseat está contratando?',
+        comments: [
+          {
+            id: 1,
+            author: {
+              name: 'Diego Fernandes',
+              avatar: 'https://api.adorable.io/avatars/150/Diego.png'
+            },
+            content: 'Conteúdo do comentário'
+          },
+          {
+            id: 2,
+            author: {
+              name: 'Matheus Henrique',
+              avatar: 'https://api.adorable.io/avatars/150/Matheus.png'
             },
             content: 'Conteúdo do comentário'
           }
@@ -31,9 +66,10 @@ class PostList extends Component {
 
   render() {
     return (
-      <div className='feed'>
-        <Post post={this.state.posts[0]} />
-        <Post post={this.state.posts[0]} />
+      <div className="feed">
+        {this.state.posts.map(post => (
+          <Post key={post.id} post={post} />
+        ))}
       </div>
     );
   }

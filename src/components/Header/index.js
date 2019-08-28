@@ -1,17 +1,18 @@
 import React from 'react';
 
-import './index.css';
+import './styles.css';
 
 import logo from '../../assets/logo.png';
 
 function HeaderComponent() {
   return (
-    <div className='header-bar'>
-      <div className='img-container'>
+    <div className="header-bar">
+      <div className="img-container">
         <img src={logo} />
       </div>
-      <div>
+      <div className="profile-row">
         <p>Meu Perfil</p>
+        <img className="avatar" src="https://api.adorable.io/avatars/150/eu.png" />
       </div>
     </div>
   );

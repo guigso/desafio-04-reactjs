@@ -1,5 +1,5 @@
 .feed {
   width: 75%;
-  height: 100vh;
+  height: calc(100vh-50px);
   margin: 15px auto;
 }

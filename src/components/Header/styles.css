@@ -10,3 +10,10 @@
 .img-container {
   align-self: center;
 }
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-around;
+}

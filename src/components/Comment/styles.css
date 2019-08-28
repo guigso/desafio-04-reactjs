@@ -1,0 +1,26 @@
+.post-comment:hover {
+  overflow: visible;
+  max-height: unset;
+}
+
+.post-comment {
+  display: flex;
+  max-height: 105px;
+  overflow: hidden;
+}
+
+strong {
+  color: #385898;
+  margin-right: 5px;
+}
+
+strong:hover {
+  text-decoration: underline;
+}
+
+.comment {
+  background-color: #eeeeee;
+  margin: 0 0 10px 20px;
+  border-radius: 20px;
+  padding: 15px;
+}
